@@ -18,8 +18,8 @@ let day = days[now.getDay()];
 
 h2.innerHTML = `${day}, ${hours}:${minutes}`;
 
-const axios = require("axios/dist/browser/axios.cjs"); // browser commonJS bundle (ES2017)
-// const axios = require('axios/dist/node/axios.cjs'); // node commonJS bundle (ES2017)
+//const axios = require("axios/dist/browser/axios.cjs"); // browser commonJS bundle (ES2017)
+ //const axios = require('axios/dist/node/axios.cjs'); // node commonJS bundle (ES2017)
 
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", getCity);
