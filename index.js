@@ -59,12 +59,13 @@ function showWeather(response) {
 function convertToFah(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 21;
+  let celsius = 21;
+  let fahrenheit = Math.round (celsius * 9/5) + 32;
+  temperatureElement.innerHTML = fahrenheit;
 }
 
 let fahConversion = document.querySelector("#fahrenheit-link");
 fahConversion.addEventListener("click", convertToFah);
-
 // function from Fah to Cel //
 function convertToCel(event) {
   event.preventDefault();
