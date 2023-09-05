@@ -21,16 +21,21 @@
         </div>
         <h1 class="city" id="cities">Stockholm</h1>
         <h2 class="time-date" id="time-date">Friday 12:30pm</h2>
-        <h3 class="weather-description">Mostly Sunny</h3>
+    <h3 class="weather-description" id="description"></h3></h3>
         <p class="current-temp">
-            ☀ <span id="temperature">20</span>
+        <div class="d-flex weather-temperature">
+                <img src=" " alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                    <strong id="temperature">20</strong><span class="units"> </span>
+                </div>
+            </div>
+           
             
         </p>
         <p class="main-degree">
                 <a href=" " id="celsius-link">°C</a> |<a href=" " id="fahrenheit-link">°F</a>
         </p>
-        <p class="precip-humid-wind">
-            <span id="description"> Description</span><br />
+        <p class="humid-wind">
             Humidity: <span id="hum"> 54%</span><br />
             Wind: <span id="wind"> 5 m/s</span>
         </p>

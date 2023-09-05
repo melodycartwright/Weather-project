@@ -1,12 +1,12 @@
 .container {
-    border: blue;
+    border: rgb(223, 196, 241);
     border-style: solid;
     background: white;
     margin: o auto;
     padding: 20px;
     display: block;
     width: 700px;
-}
+background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%);}
 
 .input-group {
     display: block;
@@ -18,7 +18,7 @@
     text-align: center;
     width: 400px;
     height: 34px;
-    border-color: rgb(84, 129, 244);
+    border-color: rgb(223, 196, 241);
     border-radius: 6px;
     margin: 0 auto;
     color: rgb(4, 9, 9);
@@ -28,7 +28,8 @@
     border-radius: 6px;
     border-width: 2px;
     background: white;
-    color: blue;
+    border-color: rgb(81, 45, 105);
+    color: rgb(81, 45, 105);
     width: 100px;
     height: 35px;
     margin: 0 auto;
@@ -39,15 +40,15 @@
 }
 
 .city {
-    color: blue;
+    color: rgb(80, 52, 99);
     font-size: 25px;
     position: relative;
     right: -25px;
 }
 
 .time-date {
-    color: black;
-    font-size: 15px;
+    color: rgb(106, 61, 102);
+    font-size: 20px;
     font-weight: 450;
     position: relative;
     right: -30px;
@@ -55,8 +56,8 @@
 }
 
 .weather-description {
-    color: black;
-    font-size: 15px;
+    color: rgb(106, 61, 102);
+    font-size: 20px;
     font-weight: 450;
     position: relative;
     right: -30px;
@@ -65,24 +66,25 @@
 
 .current-temp {
     font-size: 40px;
-    color: blue;
+    color: rgb(106, 61, 102);
     position: relative;
     right: -20px;
     top: 20px;
 }
 
-.precip-humid-wind {
+.humid-wind {
     position: relative;
     text-align: right;
     line-height: 25px;
-    top: -50px;
+    top: -120px;
     right: 80px;
+    font-size: 20px;
 }
 
 .col-1 {
     text-align: center;
     margin: 0 auto;
-    color: blue;
+    color:rgb(80, 52, 99);
     font-size: 25px;
 }
 
@@ -98,15 +100,42 @@
     top: -40px;
     font-size: 20px;
     right: -140px;
+   
 }
 
 #units a:hover {
     cursor: pointer;
     text-decoration: underline;
-}
+    color:blueviolet}
+   
 
 footer {
     text-align: center;
     display: block;
     margin: 0 auto;
+}
+#celsius-link {
+    color:blueviolet
+
+
+}
+.weather-temperature img {
+    margin-right: 5px;
+    height: 64px;
+    width: 64px;
+    position: relative;
+        left: 10px;
+        top: 22px
+}
+.weather-temperature strong {
+    color: rgb(33, 33, 33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+#temperature {
+    position: relative;
+    top: 20px;
+    left: 5px;
+    font-size: 55px;
 }
