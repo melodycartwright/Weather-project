@@ -1,4 +1,5 @@
 .container {
+    border: blue;
     border: rgb(223, 196, 241);
     border-style: solid;
     background: white;
@@ -6,7 +7,9 @@
     padding: 20px;
     display: block;
     width: 700px;
-background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%);}
+
+    background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 247, 228) 90%);
+}
 
 .input-group {
     display: block;
@@ -22,12 +25,13 @@ background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 2
     border-radius: 6px;
     margin: 0 auto;
     color: rgb(4, 9, 9);
+
 }
 
 .btn-primary {
     border-radius: 6px;
     border-width: 2px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-color: rgb(81, 45, 105);
     color: rgb(81, 45, 105);
     width: 100px;
@@ -84,7 +88,7 @@ background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 2
 .col-1 {
     text-align: center;
     margin: 0 auto;
-    color:rgb(80, 52, 99);
+    color: rgb(80, 52, 99);
     font-size: 25px;
 }
 
@@ -100,39 +104,42 @@ background: radial-gradient(circle at 10% 20%, rgb(226, 240, 254) 0%, rgb(255, 2
     top: -40px;
     font-size: 20px;
     right: -140px;
-   
+
 }
 
 #units a:hover {
     cursor: pointer;
     text-decoration: underline;
-    color:blueviolet}
-   
+    color: blueviolet
+}
+
 
 footer {
     text-align: center;
     display: block;
     margin: 0 auto;
 }
+
 #celsius-link {
-    color:blueviolet
-
-
+    color: blueviolet
 }
+
 .weather-temperature img {
     margin-right: 5px;
     height: 64px;
     width: 64px;
     position: relative;
-        left: 10px;
-        top: 22px
+    left: 10px;
+    top: 22px
 }
+
 .weather-temperature strong {
     color: rgb(33, 33, 33);
     font-size: 64px;
     line-height: 1;
     font-weight: 400;
 }
+
 #temperature {
     position: relative;
     top: 20px;

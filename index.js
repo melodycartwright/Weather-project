@@ -1,4 +1,4 @@
-let h2 = document.querySelector("h2");
+ let h2 = document.querySelector("h2");
 let now = new Date();
 let hours = now.getHours();
 if (hours < 10) `{ hours = 0${hours}}`;
@@ -96,4 +96,3 @@ let currentLocationButton = document.querySelector("#current-position");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Stockholm");
-
