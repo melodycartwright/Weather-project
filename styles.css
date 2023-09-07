@@ -1,5 +1,4 @@
 .container {
-    border: blue;
     border: rgb(223, 196, 241);
     border-style: solid;
     background: white;
@@ -120,9 +119,6 @@ footer {
     margin: 0 auto;
 }
 
-#celsius-link {
-    color: blueviolet
-}
 
 .weather-temperature img {
     margin-right: 5px;
@@ -145,4 +141,12 @@ footer {
     top: 20px;
     left: 5px;
     font-size: 55px;
+}
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
 }

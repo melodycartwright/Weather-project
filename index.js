@@ -43,16 +43,16 @@ function getCurrentLocation(event) {
 
 // showWeather //
 function showWeather(response) {
-  document.querySelector("#cities").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+ document.querySelector("#cities").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#hum").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+    response.data.wind.speed);
+ 
+  let celsiusTemperature = response.data.main.temp;
+ let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   let iconElement= document.querySelector("#icon");
 
 iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -60,24 +60,30 @@ iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.dat
 iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-
-// function from Cel to Fah //
-function convertToFah(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let celsius = 21;
-  let fahrenheit = Math.round (celsius * 9/5) + 32;
-  temperatureElement.innerHTML = fahrenheit;
-}
-
-let fahConversion = document.querySelector("#fahrenheit-link");
-fahConversion.addEventListener("click", convertToFah);
-// function from Fah to Cel //
+let celsiusTemperature= null;
 function convertToCel(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
-}
+  
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");}
+
+function convertToFah(event) {
+  event.preventDefault();
+ let temperatureElement = document.querySelector("#temperature");
+
+  let fahrenheit = (celsiusTemperature * 9)/ 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheit);
+   celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");}
+
+
+
+
+let fahConversion = document.querySelector("#fahrenheit-link");
+fahConversion.addEventListener("click", convertToFah);
+
 
 let celConversion = document.querySelector("#celsius-link");
 celConversion.addEventListener("click", convertToCel);
