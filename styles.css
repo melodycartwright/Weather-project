@@ -84,11 +84,11 @@
     font-size: 20px;
 }
 
-.col-1 {
+.col-2 {
     text-align: center;
     margin: 0 auto;
     color: rgb(80, 52, 99);
-    font-size: 25px;
+ font-size: 16px;
 }
 
 .degree {
@@ -126,8 +126,10 @@ footer {
     width: 64px;
     position: relative;
     left: 10px;
-    top: 22px
+    top: 25px
+    
 }
+
 
 .weather-temperature strong {
     color: rgb(33, 33, 33);
@@ -149,4 +151,41 @@ footer {
 
 .weather-temperature .active:hover {
     text-decoration: none;
+}
+
+.weather-forecast-date {
+    font-size: 17px;
+    opacity: 0.7;
+    position: relative;
+top:8px;
+left:5px;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+    position: relative;
+      
+   
+}
+.weather-forecast-temperature-max {
+   
+    position: relative;
+  
+
+}
+
+.weather-forecast-temperatures {
+    font-size: 15px;
+    position: relative;
+     top: -15px;
+     left:5px;
+    
+   
+}
+.weather-forcast img{
+    margin-right: 5px;
+        height: 64px;
+        width: 64px;
+        position: relative;
+        bottom:15px;
 }

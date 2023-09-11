@@ -18,6 +18,26 @@ let day = days[now.getDay()];
 
 h2.innerHTML = `${day}, ${hours}:${minutes}`;
 
+function displayForecast(){
+  let forecastElement= document.querySelector("#forecast");
+  let days= ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML= `<div class="row">`;
+  days.forEach(function(day) {forecastHTML= forecastHTML + `  <div class="col-2">
+                <div class="weather-forecast-date">${day}</div>
+                <br />
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" width="42"/>  
+            <div class="weather-forecast-temperatures"> <span class="weather-forecast-temperature-max">23°</span>
+                 <span class="weather-forecast-temperature-min">15°</span>
+                </div>  </div>
+               
+          `;});
+            forecastHTML= forecastHTML+ `</div>`;
+            forecastElement.innerHTML=forecastHTML;
+            console.log(forecastHTML);
+
+  }
+
+
 //const axios = require("axios/dist/browser/axios.cjs"); // browser commonJS bundle (ES2017)
  //const axios = require('axios/dist/node/axios.cjs'); // node commonJS bundle (ES2017)
 
@@ -25,13 +45,13 @@ let form = document.querySelector("#search-city");
 form.addEventListener("submit", getCity);
 
 function searchCity(city) {
-  let apiKey = "3378d2ce8663553f82fd52aa8be869a1";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
 
 function searchLocation(position) {
-  let apiKey = "3378d2ce8663553f82fd52aa8be869a1";
+  let apiKey = "1a6432c5ca7b6f9b0bee45c98d54ea71";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiURL).then(showWeather);
 }
@@ -102,3 +122,4 @@ let currentLocationButton = document.querySelector("#current-position");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Stockholm");
+displayForecast();
