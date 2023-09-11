@@ -104,33 +104,13 @@ iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
 
-let celsiusTemperature= null;
-function convertToCel(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");}
-
-function convertToFah(event) {
-  event.preventDefault();
- let temperatureElement = document.querySelector("#temperature");
-
-  let fahrenheit = (celsiusTemperature * 9)/ 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheit);
-   celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");}
 
 
 
 
-let fahConversion = document.querySelector("#fahrenheit-link");
-fahConversion.addEventListener("click", convertToFah);
 
 
-let celConversion = document.querySelector("#celsius-link");
-celConversion.addEventListener("click", convertToCel);
+
 
 //let cityName = "Los Angeles";
 function getCity(event) {
