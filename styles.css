@@ -1,6 +1,9 @@
-body{ background:radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);}
+body{ background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+background-repeat: no-repeat;
+
+}
 .container {
-    border: rgb(223, 196, 241);
+    border: rgb(249, 248, 254);
     border-style: solid;
     background: white;
     margin: o auto;
@@ -9,8 +12,7 @@ body{ background:radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(2
     width: 700px;
     position: relative;
     top: 25px;
-
-background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
 }
 
 .input-group {
@@ -23,18 +25,19 @@ background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 9
     text-align: center;
     width: 400px;
     height: 34px;
-    border-color: rgb(223, 196, 241);
+    border-color:rgb(247, 244, 247);
     border-radius: 6px;
     margin: 0 auto;
     color: rgb(4, 9, 9);
+    background:rgb(243, 241, 243) ;
 
 }
 
 .btn-primary {
     border-radius: 6px;
     border-width: 2px;
-    background: rgb(255, 255, 255);
-    border-color: rgb(81, 45, 105);
+    background: rgb(243, 241, 243);
+border-color:rgb(244, 236, 245);
     color: rgb(81, 45, 105);
     width: 100px;
     height: 35px;
@@ -43,6 +46,10 @@ background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 9
     margin-bottom: 5px;
     vertical-align: middle;
     initial-value: 20px;
+}
+.btn-primary:hover{
+    background-color: aliceblue;
+
 }
 
 .city {
@@ -122,6 +129,7 @@ footer {
     margin: 0 auto;
     position: relative;
     top:25px;
+    background:rgb(247, 238, 240);
 }
 
 
@@ -156,6 +164,7 @@ footer {
 
 .weather-temperature .active:hover {
     text-decoration: none;
+  
 }
 
 .weather-forecast-date {
