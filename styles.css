@@ -1,7 +1,9 @@
-body{ background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-background-repeat: no-repeat;
+body {
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-repeat: no-repeat;
 
 }
+
 .container {
     border: rgb(249, 248, 254);
     border-style: solid;
@@ -12,7 +14,7 @@ background-repeat: no-repeat;
     width: 700px;
     position: relative;
     top: 25px;
-background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
 }
 
 .input-group {
@@ -25,11 +27,11 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
     text-align: center;
     width: 400px;
     height: 34px;
-    border-color:rgb(247, 244, 247);
+    border-color: rgb(247, 244, 247);
     border-radius: 6px;
     margin: 0 auto;
     color: rgb(4, 9, 9);
-    background:rgb(243, 241, 243) ;
+    background: rgb(243, 241, 243);
 
 }
 
@@ -37,7 +39,7 @@ background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 2
     border-radius: 6px;
     border-width: 2px;
     background: rgb(243, 241, 243);
-border-color:rgb(244, 236, 245);
+    border-color: rgb(244, 236, 245);
     color: rgb(81, 45, 105);
     width: 100px;
     height: 35px;
@@ -47,7 +49,8 @@ border-color:rgb(244, 236, 245);
     vertical-align: middle;
     initial-value: 20px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: aliceblue;
 
 }
@@ -98,7 +101,7 @@ border-color:rgb(244, 236, 245);
     text-align: center;
     margin: 0 auto;
     color: rgb(80, 52, 99);
- font-size: 16px;
+    font-size: 16px;
 }
 
 .degree {
@@ -110,9 +113,9 @@ border-color:rgb(244, 236, 245);
 
 .main-degree {
     position: relative;
-    top: -40px;
+    top: -55px;
     font-size: 20px;
-    right: -140px;
+    right: -165px;
 
 }
 
@@ -128,8 +131,8 @@ footer {
     display: block;
     margin: 0 auto;
     position: relative;
-    top:25px;
-    background:rgb(247, 238, 240);
+    top: 25px;
+    background: rgb(247, 238, 240);
 }
 
 
@@ -140,7 +143,6 @@ footer {
     position: relative;
     left: 10px;
     top: 25px
-    
 }
 
 
@@ -157,6 +159,7 @@ footer {
     left: 5px;
     font-size: 55px;
 }
+
 .weather-temperature .active {
     color: rgb(33, 33, 33);
     cursor: default;
@@ -164,42 +167,44 @@ footer {
 
 .weather-temperature .active:hover {
     text-decoration: none;
-  
+
 }
 
 .weather-forecast-date {
     font-size: 17px;
     opacity: 0.7;
     position: relative;
-top:-15px;
-left:5px;
+    top: -15px;
+    left: 5px;
 }
 
 .weather-forecast-temperature-min {
     opacity: 0.5;
     position: relative;
-      
-   
+
+
 }
+
 .weather-forecast-temperature-max {
-   
+
     position: relative;
-  
+
 
 }
 
 .weather-forecast-temperatures {
     font-size: 15px;
     position: relative;
-     top: -15px;
-     left:5px;
-    
-   
+    top: -15px;
+    left: 5px;
+
+
 }
-.weather-forcast img{
+
+.weather-forcast img {
     margin-right: 5px;
-        height: 64px;
-        width: 64px;
-        position: relative;
-        bottom:15px;
+    height: 64px;
+    width: 64px;
+    position: relative;
+    bottom: 15px;
 }
